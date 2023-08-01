@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Condensed&family=Roboto:wght@100;300;400&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    padding-top: 3rem;
+    background: linear-gradient(45deg, rgb(118, 201, 255), rgb(247, 255, 222));;
+}
+.container-1{
+    position: relative;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 30rem;
+    height: 15rem;
+    border: solid 1px black;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.container-1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('shownthesheepbg.jpg');
+    background-size: cover;
+    filter: blur(1.5px);
+    transition: filter 0.3s ease;
+}
+
+.container-1:hover::before {
+    filter: blur(10px);
+}
+h1,p,h2,button{
+    z-index: 1;
+}
+.main-text,.enter-txt,.enterall-txt,.count-txt{
+    color:powderblue;
+    font-family:'Roboto', sans-serif;
+}
+.main-text{
+    font-weight: 800;
+    font-size: 2.5rem;
+}
+#increment-btn{
+    padding:3px;
+    margin:3px; 
+    width:150px;
+    border:solid 2px green;
+    border-radius: 3px;
+    color:white;
+    background-color: darkgreen; 
+}
+#increment-btn:hover{
+    background-color: #34E89E;
+}
+#save-btn{
+    padding:3px;
+    margin:3px; 
+    width:150px;
+    border:solid 2px maroon;
+    border-radius: 3px;
+    color:white;
+    background-color: #be3144; 
+}
+#save-btn:hover{
+    background-color: rgb(83, 13, 13);
+}
+
+
+
+
+
+
+
+
+
